@@ -13,8 +13,8 @@ function rotateElement(event, element) {
     const y = event.clientY;
 
     // Find the center of the card
-    const cardCenterX = rect.right - (rect.width / 2);
-    const cardCenterY = rect.bottom - (rect.height / 2);
+    const cardCenterX = (rect.right + rect.width) / 2;
+    const cardCenterY = (rect.bottom + rect.height) / 2;
 
     // Get cursor offset from card center * scale.
     const offsetX = ((x - cardCenterX) / cardCenterX) * 20;
