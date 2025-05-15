@@ -69,20 +69,6 @@
     transition: transform, 150ms;
 }
 
-#hover-demo-C {
-    transition: translateZ, 150ms;
-}
-
-#hover-demo-C:hover {
-    transform:
-        perspective(1000px)
-        translateZ(1em)
-        rotateY(var(--rotateY))
-        rotateX(var(--rotateX));
-    
-    transition: translateZ, 50ms
-}
-
 
 
 
@@ -104,6 +90,6 @@ body {
     margin-top: 2.5rem;
 }
 
-#hover-demo-A, #hover-demo-B, #hover-demo-C {
+#hover-demo-A, #hover-demo-B {
     margin-top: 2.5rem;
 }
